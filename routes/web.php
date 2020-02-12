@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('todoList', ['gogo']);
+//});
+
+Route::get('todoList', 'todoController@todoList');
+Route::get('editView', 'todoController@editView')->name('editView');
+
